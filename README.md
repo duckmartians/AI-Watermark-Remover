@@ -2,15 +2,15 @@
 
 <p align="left">
   <a href="/releases/latest">
-    <img src="https://img.shields.io/badge/Download%20Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+    <img src="https://img.shields.io/badge/Phiên%20bản%20Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
   </a>
   <a href="/releases/latest">
-    <img src="https://img.shields.io/badge/Download%20macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
+    <img src="https://img.shields.io/badge/Phiên%20bản%20macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
   </a>
 </p>
 
 <p align="left">
-  <a href="https://duckmartians.info/g-labs">
+  <a href="https://duckmartians.info">
     <img src="https://img.shields.io/badge/Homepage-Visit-0A66C2?style=flat-square&logo=google-chrome&logoColor=white">
   </a>
   <a href="https://discord.gg/munMZEBMw5">

@@ -17,7 +17,7 @@
   </a>
 </p>
 
-> 🇻🇳 **Tiếng Việt:** [README.vi.md](README.vi.md)
+🌐 **English** · [Tiếng Việt](README.vi.md) · [বাংলা](README.bn.md) · [हिन्दी](README.hi.md) · [Português (BR)](README.pt_BR.md) · [Русский](README.ru.md) · [Türkçe](README.tr.md) · [اردو](README.ur.md) · [简体中文](README.zh_CN.md)
 
 This app helps you **remove logos, watermarks, signatures and text overlays from images and videos**.
 Just **paint over what you want gone** and the app fills it back in naturally. Everything runs

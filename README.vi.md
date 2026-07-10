@@ -17,7 +17,7 @@
   </a>
 </p>
 
-> 🇬🇧 **English:** [README.md](README.md)
+🌐 [English](README.md) · **Tiếng Việt** · [বাংলা](README.bn.md) · [हिन्दी](README.hi.md) · [Português (BR)](README.pt_BR.md) · [Русский](README.ru.md) · [Türkçe](README.tr.md) · [اردو](README.ur.md) · [简体中文](README.zh_CN.md)
 
 Ứng dụng giúp bạn **xóa logo chìm, chữ ký, dòng chữ (watermark) trên ảnh và video**.
 Bạn chỉ cần **tô lên chỗ muốn xóa**, ứng dụng sẽ tự vẽ lấp lại cho tự nhiên. Mọi thứ xử lý

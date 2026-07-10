@@ -24,8 +24,8 @@ Just **paint over what you want gone** and the app fills it back in naturally. E
 **on your own computer** — **no internet needed**, and your images/videos are **never uploaded anywhere**.
 
 ---
-<img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/1762db83-46f0-4dc8-b2ca-dbacd23e42f9" />
-<img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/c5f7c202-8b80-405d-a815-1c17785c4223" />
+<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/dbcb0fad-cc38-49d6-b9c6-acd1c0e16983" />
+<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/f07d1f33-e835-4c6c-b5b6-6b8db94b9cb9" />
 
 ## Install & Open
 

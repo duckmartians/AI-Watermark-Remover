@@ -1,11 +1,11 @@
-# AI Watermark Remover — Hướng dẫn sử dụng
+# AI Watermark Remover — User Guide
 
 <p align="left">
   <a href="/releases/latest">
-    <img src="https://img.shields.io/badge/Phiên%20bản%20Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+    <img src="https://img.shields.io/badge/Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
   </a>
   <a href="/releases/latest">
-    <img src="https://img.shields.io/badge/Phiên%20bản%20macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
+    <img src="https://img.shields.io/badge/macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
   </a>
 </p>
 <p align="left">
@@ -17,101 +17,103 @@
   </a>
 </p>
 
-Ứng dụng giúp bạn **xóa logo chìm, chữ ký, dòng chữ (watermark) trên ảnh và video**.
-Bạn chỉ cần **tô lên chỗ muốn xóa**, ứng dụng sẽ tự vẽ lấp lại cho tự nhiên. Mọi thứ xử lý
-ngay trên máy bạn — **không cần mạng**, ảnh/video **không bị gửi đi đâu**.
+> 🇻🇳 **Tiếng Việt:** [README.vi.md](README.vi.md)
+
+This app helps you **remove logos, watermarks, signatures and text overlays from images and videos**.
+Just **paint over what you want gone** and the app fills it back in naturally. Everything runs
+**on your own computer** — **no internet needed**, and your images/videos are **never uploaded anywhere**.
 
 ---
 <img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/1762db83-46f0-4dc8-b2ca-dbacd23e42f9" />
 <img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/c5f7c202-8b80-405d-a815-1c17785c4223" />
 
-## Cài đặt & mở ứng dụng
+## Install & Open
 
-1. Chạy file cài đặt (hoặc giải nén thư mục nếu được gửi dạng nén).
-2. Mở **AI Watermark Remover** (từ màn hình Desktop, menu Start, hoặc file `.exe`).
+1. Run the installer (or unzip the folder if you received a compressed archive).
+2. Open **AI Watermark Remover** (from the Desktop, the Start menu, or the `.exe` file).
 
-> **Windows hiện cảnh báo "Windows protected your PC"?**
-> Đây là cảnh báo mặc định cho ứng dụng chưa mua chứng chỉ, **không phải virus**.
-> Bấm **More info → Run anyway** (Thêm thông tin → Vẫn chạy) là mở được.
+> **Windows shows "Windows protected your PC"?**
+> This is the default warning for apps without a paid signing certificate — **it is not a virus**.
+> Click **More info → Run anyway** to open it.
 
-Lần đầu mở có thể hơi lâu một chút, những lần sau sẽ nhanh hơn.
+The first launch may take a little longer; subsequent launches are faster.
 
-**Có hai bản:** bản **Đầy đủ** (ảnh + video) và bản **Nhẹ** (chỉ ảnh, chạy nhẹ hơn).
-Nhìn tiêu đề cửa sổ: có chữ **"Lite"** nghĩa là bản Nhẹ (không mở được video).
+**There are two editions:** the **Pro** edition (images + video) and the **Lite** edition (images only, lighter).
+Check the window title to tell them apart: **"Pro"** = full edition, **"Lite"** = light edition (cannot open videos).
 
 ---
 
-## Cách dùng — 4 bước
+## How to use — 4 steps
 
-### Bước 1 — Mở ảnh/video
-- Bấm nút **hình tờ giấy** để chọn một hay nhiều tệp, hoặc nút **hình thư mục** để mở cả thư mục.
-- Hoặc **kéo thả** ảnh/video thẳng vào cửa sổ.
-- Mở nhiều tệp thì có dải ảnh nhỏ ở dưới; mỗi ảnh có dấu **×** để bỏ ra khỏi danh sách.
+### Step 1 — Open an image/video
+- Click the **document** button to pick one or more files, or the **folder** button to open a whole folder.
+- Or **drag and drop** images/videos straight into the window.
+- With multiple files you get a thumbnail strip at the bottom; each item has an **×** to remove it from the list.
 
-### Bước 2 — Tô lên chỗ cần xóa
-Chọn công cụ ở cột bên trái, rồi tô/khoanh lên watermark (vùng tô hiện **màu đỏ mờ**):
+### Step 2 — Paint over what to remove
+Pick a tool in the left column, then paint/outline over the watermark (the painted area shows as a **soft red**):
 
-| Công cụ | Dùng để |
+| Tool | Use it to |
 |----|---|
-| **Cọ** | Tô lên watermark (giữ chuột trái và kéo). Cỡ cọ chỉnh bằng thanh trượt bên dưới. |
-| **Khung** | Kéo một khung chữ nhật phủ lên watermark cho nhanh. |
-| **Tẩy** | Xóa bớt chỗ tô thừa. |
-| **Văn bản** | Gõ chữ để che watermark dạng chữ cho chính xác. Chữ này chỉ để **đánh dấu**, xóa xong sẽ biến mất chứ không dính vào ảnh. |
+| **Brush** | Paint over the watermark (hold the left mouse button and drag). Adjust brush size with the slider below. |
+| **Box** | Drag a rectangle over the watermark for a quick cover. |
+| **Eraser** | Wipe away extra painting. |
+| **Text** | Type text to precisely cover a text-style watermark. This text is only a **marker** — it disappears after processing and is not baked into the image. |
 
-Tô lố thì dùng **Hoàn tác / Làm lại / Xóa hết / Về gốc** ở cột trái để sửa.
-Bấm lại vào nút công cụ (hoặc phím **Esc**) để bỏ chọn.
+Painted too much? Use **Undo / Redo / Clear all / Reset** in the left column.
+Click the tool button again (or press **Esc**) to deselect it.
 
-> **Mẹo:** tô trùm kín watermark, hơi lố ra ngoài một chút, kết quả sẽ đẹp hơn là tô thiếu.
+> **Tip:** cover the watermark fully and spill over a little — results look better than under-painting.
 
-### Bước 3 — Bấm Chạy
-- **Chạy** — xử lý ảnh/video đang mở.
-- **Chạy tất cả** — làm hàng loạt cho mọi tệp **cùng khung hình** trong danh sách
-  (chỉ bật khi có từ 2 tệp trở lên).
+### Step 3 — Click Run
+- **Run** — process the currently open image/video.
+- **Run all** — batch-process every file **with the same frame size** in the list
+  (enabled only when there are 2 or more files).
 
-### Bước 4 — Lưu
-- Bấm **Lưu**. **Mỗi lần lưu, ứng dụng sẽ hỏi bạn chọn thư mục** để cất tệp kết quả.
-- Muốn giữ lại ảnh gốc? Bật ô **"Thêm _clean"** — tệp mới sẽ có thêm chữ `_clean`
-  trong tên (ví dụ `anh.png` → `anh_clean.png`), không đè lên ảnh gốc.
-
----
-
-## Xử lý video (bản Đầy đủ)
-
-- Video **không lưu bằng nút Lưu**. Hãy bấm **Chạy** (một video) hoặc **Chạy tất cả**
-  (nhiều video); ứng dụng sẽ hỏi thư mục lưu khi bắt đầu.
-- Video xử lý bằng AI theo từng khung hình nên **chậm hơn ảnh khá nhiều** — cứ để yên cho nó chạy.
+### Step 4 — Save
+- Click **Save**. **Each time you save, the app asks you to choose a folder** for the output files.
+- Want to keep the originals? Enable the **"Add _clean"** option — new files get a `_clean` suffix
+  in their name (e.g. `photo.png` → `photo_clean.png`), so the original is not overwritten.
 
 ---
 
-## Xem ảnh & tiện ích
+## Video processing (Pro edition)
 
-- **Lăn chuột**: phóng to / thu nhỏ · **Giữ chuột giữa và kéo**: di chuyển ảnh · phím **F** hoặc **nháy đúp**: vừa khung.
-- Biểu tượng **ngôi nhà**: mở trang chủ. Biểu tượng **quả địa cầu**: đổi ngôn ngữ (hỗ trợ 9 thứ tiếng, có Tiếng Việt).
+- Videos are **not saved with the Save button**. Click **Run** (one video) or **Run all**
+  (multiple videos); the app asks for a save folder when it starts.
+- Video is processed frame by frame with AI, so it is **much slower than images** — just let it run.
 
-## Phím tắt
+---
 
-| Thao tác | Phím |
+## Viewing & utilities
+
+- **Mouse wheel**: zoom in / out · **Hold middle mouse and drag**: pan · **F** or **double-click**: fit to window.
+- **House** icon: open the homepage. **Globe** icon: change language (9 languages supported, including Vietnamese).
+
+## Keyboard shortcuts
+
+| Action | Key |
 |---|---|
-| Hoàn tác / Làm lại | `Ctrl+Z` / `Ctrl+Shift+Z` |
-| Đổi cỡ cọ | `Ctrl` + lăn chuột |
-| Vừa khung | `F` hoặc nháy đúp |
-| Bỏ chọn công cụ | `Esc` |
-| Tẩy nhanh (khi đang dùng Cọ) | Giữ **chuột phải** |
+| Undo / Redo | `Ctrl+Z` / `Ctrl+Shift+Z` |
+| Change brush size | `Ctrl` + mouse wheel |
+| Fit to window | `F` or double-click |
+| Deselect tool | `Esc` |
+| Quick erase (while using Brush) | Hold **right mouse button** |
 
 ---
 
-## Định dạng mở được
+## Supported formats
 
-- **Ảnh:** JPG, PNG, WEBP, BMP, TIFF và các định dạng ảnh phổ biến khác.
-- **Video:** MP4, MOV, MKV, AVI, WEBM, WMV, FLV… (bản Đầy đủ).
+- **Images:** JPG, PNG, WEBP, BMP, TIFF and other common image formats.
+- **Video:** MP4, MOV, MKV, AVI, WEBM, WMV, FLV… (Pro edition).
 
-## Gặp trục trặc?
+## Troubleshooting
 
-| Hiện tượng | Cách xử lý |
+| Symptom | What to do |
 |---|---|
-| Windows cảnh báo khi mở | Bấm **More info → Run anyway** (ứng dụng an toàn, chỉ chưa mua chứng chỉ). |
-| Không mở được video | Bạn đang dùng bản **Nhẹ (Lite)** — chỉ hỗ trợ ảnh. Hãy dùng bản Đầy đủ. |
-| Xóa xong vẫn còn vết mờ | Tô **kín và lố hơn** một chút rồi Chạy lại. |
-| Video chạy rất lâu | Bình thường — video xử lý nặng, hãy chờ hoặc dùng máy có card đồ họa. |
+| Windows warns on open | Click **More info → Run anyway** (the app is safe, it just isn't code-signed). |
+| Can't open videos | You're on the **Lite** edition — images only. Use the **Pro** edition. |
+| Faint marks remain after removal | Paint **more fully and slightly over the edges**, then Run again. |
+| Video is very slow | Normal — video is heavy; please wait, or use a machine with a graphics card. |
 
-Chúc bạn dùng vui vẻ!
+Enjoy!

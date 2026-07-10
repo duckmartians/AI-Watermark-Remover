@@ -1,5 +1,25 @@
 # AI Watermark Remover — Hướng dẫn sử dụng
 
+<p align="left">
+  <a href="/releases/latest">
+    <img src="https://img.shields.io/badge/Download%20Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
+  </a>
+  <a href="/releases/latest">
+    <img src="https://img.shields.io/badge/Download%20macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://duckmartians.info/g-labs">
+    <img src="https://img.shields.io/badge/Homepage-Visit-0A66C2?style=flat-square&logo=google-chrome&logoColor=white">
+  </a>
+  <a href="https://discord.gg/munMZEBMw5">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https://discord.com/api/guilds/1369302820037201981/widget.json&query=$.presence_count&label=Discord&color=5865F2&logo=discord&style=flat-square">
+  </a>
+</p>
+
+<br>
+
 Ứng dụng giúp bạn **xóa logo chìm, chữ ký, dòng chữ (watermark) trên ảnh và video**.
 Bạn chỉ cần **tô lên chỗ muốn xóa**, ứng dụng sẽ tự vẽ lấp lại cho tự nhiên. Mọi thứ xử lý
 ngay trên máy bạn — **không cần mạng**, ảnh/video **không bị gửi đi đâu**.

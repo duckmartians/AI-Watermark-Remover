@@ -9,6 +9,14 @@
   </a>
 </p>
 <p align="left">
+  <a href="https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3">
+    <img src="https://img.shields.io/badge/Windows-Drive%20backup-4285F4?style=flat-square&logo=googledrive&logoColor=white">
+  </a>
+  <a href="https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l">
+    <img src="https://img.shields.io/badge/macOS-Drive%20backup-4285F4?style=flat-square&logo=googledrive&logoColor=white">
+  </a>
+</p>
+<p align="left">
   <a href="https://duckmartians.info">
     <img src="https://img.shields.io/badge/Homepage-Visit-0A66C2?style=flat-square&logo=google-chrome&logoColor=white">
   </a>
@@ -24,8 +32,8 @@
 **на вашем собственном компьютере** — **интернет не нужен**, а ваши изображения и видео **никуда не загружаются**.
 
 ---
-<img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/1762db83-46f0-4dc8-b2ca-dbacd23e42f9" />
-<img width="1242" height="852" alt="image" src="https://github.com/user-attachments/assets/c5f7c202-8b80-405d-a815-1c17785c4223" />
+<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/dbcb0fad-cc38-49d6-b9c6-acd1c0e16983" />
+<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/f07d1f33-e835-4c6c-b5b6-6b8db94b9cb9" />
 
 ## Установка и запуск
 

@@ -1,10 +1,10 @@
 # AI Watermark Remover — Руководство пользователя
 
 <p align="left">
-  <a href="/releases/latest">
+  <a href="https://github.com/duckmartians/AI-Watermark-Remover/releases/latest">
     <img src="https://img.shields.io/badge/Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
   </a>
-  <a href="/releases/latest">
+  <a href="https://github.com/duckmartians/AI-Watermark-Remover/releases/latest">
     <img src="https://img.shields.io/badge/macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
   </a>
 </p>

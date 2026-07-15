@@ -51,6 +51,24 @@ Nhìn tiêu đề cửa sổ để biết bản nào: chữ **"Pro"** = bản đ
 
 ---
 
+## Cấu hình yêu cầu
+
+| | **Lite** (ảnh) | **Pro** (ảnh + video) |
+|---|---|---|
+| Hệ điều hành | Windows 10/11 64-bit (hoặc macOS) | Windows 10/11 64-bit (hoặc macOS) |
+| CPU | 64-bit, có **AVX2** | 64-bit, có **AVX2** |
+| GPU | **không cần** — chạy bằng CPU | **cần GPU NVIDIA có CUDA** để xử lý video |
+| VRAM | — | tối thiểu 4 GB · **khuyến nghị 6–8 GB** (video HD / dài) |
+| RAM | 4 GB trở lên | 8 GB trở lên |
+| Cài thêm | **Visual C++ Redistributable 2015–2022 x64** | như trên + **driver NVIDIA** mới |
+
+- **Bản Pro xử lý video cần card đồ họa NVIDIA có CUDA** — cỡ **RTX 2060 (dòng RTX 20 / GTX 16, kiến trúc "Turing") trở lên**. Không có GPU NVIDIA phù hợp thì engine video chạy bằng CPU và **rất chậm** (thường không dùng nổi).
+- **Xóa ẢNH** (cả hai bản) chạy tốt **bằng CPU**, không cần card đồ họa.
+- GPU AMD/Intel, hoặc NVIDIA đời cũ hơn dòng 16/20, **không được tăng tốc** cho video.
+- Không cần mạng, không gửi dữ liệu đi đâu — mọi thứ chạy tại máy.
+
+---
+
 ## Cách dùng — 4 bước
 
 ### Bước 1 — Mở ảnh/video
@@ -89,7 +107,23 @@ Bấm lại vào nút công cụ (hoặc phím **Esc**) để bỏ chọn.
 
 - Video **không lưu bằng nút Lưu**. Hãy bấm **Chạy** (một video) hoặc **Chạy tất cả**
   (nhiều video); ứng dụng sẽ hỏi thư mục lưu khi bắt đầu.
-- Video xử lý bằng AI theo từng khung hình nên **chậm hơn ảnh khá nhiều** — cứ để yên cho nó chạy.
+- Video xử lý bằng AI theo từng khung hình trên **GPU** nên chậm hơn ảnh — cứ để yên cho nó chạy.
+
+### Thanh trượt Tốc độ ⇄ Chất lượng
+
+Ngay dưới thanh **Cỡ cọ** (cột trái, **chỉ bản Pro**) có 4 thanh trượt để bạn cân **tốc độ và chất lượng**.
+Rê chuột vào từng thanh sẽ hiện giải thích. Ứng dụng tự nhớ vị trí bạn chỉnh.
+
+| Thanh trượt | Điều khiển gì | Nhanh hơn | Nét hơn |
+|---|---|---|---|
+| **Độ phân giải** | Độ phân giải khi xử lý — **đòn bẩy tốc độ mạnh nhất**. Thấp = nhanh hơn nhiều, vùng xóa hơi mờ. | ~**50** | **100** |
+| **Chuyển động** | Độ kỹ khi phân tích chuyển động giữa các khung (chất lượng gần như không đổi). | **2–4** | 20 |
+| **Số khung xét** | Số khung gần nhau xử lý cùng lúc. | thấp | cao |
+| **Khung tham chiếu** | Khoảng cách khi lấy khung tham chiếu. | **cao** | thấp |
+
+- **Muốn nhanh?** Đặt **Độ phân giải ≈ 50** và **Chuyển động ≈ 4** (mặc định đã ưu tiên tốc độ).
+- **Vùng xóa bị mờ?** Kéo **Độ phân giải** lên gần **100**.
+- Các thông số này chỉ ảnh hưởng **video**; xử lý ảnh không bị ảnh hưởng.
 
 ---
 
@@ -122,6 +156,6 @@ Bấm lại vào nút công cụ (hoặc phím **Esc**) để bỏ chọn.
 | Windows cảnh báo khi mở | Bấm **More info → Run anyway** (ứng dụng an toàn, chỉ chưa mua chứng chỉ). |
 | Không mở được video | Bạn đang dùng bản **Lite** (nhẹ) — chỉ hỗ trợ ảnh. Hãy dùng bản **Pro**. |
 | Xóa xong vẫn còn vết mờ | Tô **kín và lố hơn** một chút rồi Chạy lại. |
-| Video chạy rất lâu | Bình thường — video xử lý nặng, hãy chờ hoặc dùng máy có card đồ họa. |
+| Video chạy rất lâu | Kéo thanh **Độ phân giải** xuống (~50) và **Chuyển động** (~4) — xem *Thanh trượt Tốc độ ⇄ Chất lượng*. Nên dùng GPU NVIDIA có CUDA (RTX 2060 trở lên) — xem *Cấu hình yêu cầu*. |
 
 Chúc bạn dùng vui vẻ!

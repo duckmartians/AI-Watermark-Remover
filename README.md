@@ -51,6 +51,24 @@ Check the window title to tell them apart: **"Pro"** = full edition, **"Lite"** 
 
 ---
 
+## System requirements
+
+| | **Lite** (images) | **Pro** (images + video) |
+|---|---|---|
+| OS | Windows 10/11 64-bit (or macOS) | Windows 10/11 64-bit (or macOS) |
+| CPU | 64-bit with **AVX2** | 64-bit with **AVX2** |
+| GPU | **not required** — runs on CPU | **NVIDIA GPU with CUDA required** for video |
+| VRAM | — | 4 GB min · **6–8 GB recommended** (HD / long clips) |
+| RAM | 4 GB+ | 8 GB+ |
+| Also install | **Visual C++ Redistributable 2015–2022 x64** | same + an up-to-date **NVIDIA driver** |
+
+- **Pro video needs an NVIDIA graphics card with CUDA** — roughly **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") or newer**. Without a supported NVIDIA GPU the video engine falls back to the CPU and becomes **extremely slow** (often impractical).
+- **Image** removal works fine **on CPU** in **both** editions — no graphics card needed.
+- AMD/Intel GPUs, or NVIDIA cards older than the 16/20-series, are **not accelerated** for video.
+- No internet is required and nothing is uploaded — everything runs locally.
+
+---
+
 ## How to use — 4 steps
 
 ### Step 1 — Open an image/video
@@ -89,7 +107,23 @@ Click the tool button again (or press **Esc**) to deselect it.
 
 - Videos are **not saved with the Save button**. Click **Run** (one video) or **Run all**
   (multiple videos); the app asks for a save folder when it starts.
-- Video is processed frame by frame with AI, so it is **much slower than images** — just let it run.
+- Video is processed frame by frame by AI on the **GPU**, so it is slower than images — just let it run.
+
+### Speed ⇄ quality sliders
+
+Under the **Brush size** slider (left column, **Pro** only) there are four sliders that let you trade
+**speed for quality**. Hover any slider to see a tip. Your settings are remembered.
+
+| Slider | What it controls | Faster | Sharper |
+|---|---|---|---|
+| **Resolution** | Processing resolution — the **biggest** speed lever. Lower = much faster, erased area a little soft. | ~**50** | **100** |
+| **Motion** | How thoroughly motion between frames is analysed (quality barely changes). | **2–4** | 20 |
+| **Frames** | How many nearby frames are handled together. | lower | higher |
+| **Reference** | Spacing when picking reference frames. | **higher** | lower |
+
+- **Want it fast?** Set **Resolution ≈ 50** and **Motion ≈ 4** (defaults already favour speed).
+- **Erased area looks blurry?** Raise **Resolution** toward **100**.
+- These only affect **video**; images are unaffected.
 
 ---
 
@@ -122,6 +156,6 @@ Click the tool button again (or press **Esc**) to deselect it.
 | Windows warns on open | Click **More info → Run anyway** (the app is safe, it just isn't code-signed). |
 | Can't open videos | You're on the **Lite** edition — images only. Use the **Pro** edition. |
 | Faint marks remain after removal | Paint **more fully and slightly over the edges**, then Run again. |
-| Video is very slow | Normal — video is heavy; please wait, or use a machine with a graphics card. |
+| Video is very slow | Lower the **Resolution** slider (≈50) and **Motion** (≈4) — see *Speed ⇄ quality sliders*. A CUDA NVIDIA GPU (RTX 2060+) is strongly recommended — see *System requirements*. |
 
 Enjoy!

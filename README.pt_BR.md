@@ -51,6 +51,23 @@ Verifique o título da janela para diferenciá-las: **"Pro"** = edição complet
 
 ---
 
+## Requisitos do sistema
+
+| | **Lite** (imagens) | **Pro** (imagens + vídeo) |
+|---|---|---|
+| SO | Windows 10/11 64 bits (ou macOS) | Windows 10/11 64 bits (ou macOS) |
+| CPU | 64 bits com **AVX2** | 64 bits com **AVX2** |
+| GPU | **não é necessária** — roda na CPU | **GPU NVIDIA com CUDA obrigatória** para vídeo |
+| VRAM | — | 4 GB no mínimo · **6–8 GB recomendados** (HD / clipes longos) |
+| RAM | 4 GB+ | 8 GB+ |
+| Instale também | **Visual C++ Redistributable 2015–2022 x64** | o mesmo + um **driver NVIDIA** atualizado |
+
+- **O vídeo no Pro precisa de uma placa de vídeo NVIDIA com CUDA** — aproximadamente uma **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") ou mais recente**. Sem uma GPU NVIDIA compatível, o motor de vídeo recorre à CPU e fica **extremamente lento**.
+- A remoção em **imagens** funciona bem **na CPU** em **ambas** as edições — nenhuma placa de vídeo é necessária.
+- GPUs AMD/Intel, ou placas NVIDIA anteriores às séries 16/20, **não têm aceleração** para vídeo.
+
+---
+
 ## Como usar — 4 passos
 
 ### Passo 1 — Abra uma imagem/vídeo
@@ -91,6 +108,21 @@ Clique novamente no botão da ferramenta (ou pressione **Esc**) para desativá-l
   (vários vídeos); o aplicativo pede uma pasta de salvamento quando começa.
 - O vídeo é processado quadro a quadro com IA, por isso é **muito mais lento do que imagens** — apenas deixe rodando.
 
+### Controles deslizantes de velocidade ⇄ qualidade
+
+Abaixo do controle deslizante **Tamanho do pincel** (coluna da esquerda, apenas **Pro**) há quatro controles deslizantes para trocar velocidade por qualidade. Passe o mouse sobre qualquer controle para ver uma dica; suas configurações são lembradas.
+
+| Controle | O que controla | Mais rápido | Mais nítido |
+|---|---|---|---|
+| **Resolution** | Resolução de processamento — a maior alavanca de velocidade. Menor = muito mais rápido, área apagada um pouco suave. | ~**50** | **100** |
+| **Motion** | O quão minuciosamente o movimento entre quadros é analisado (a qualidade quase não muda). | **2–4** | 20 |
+| **Frames** | Quantos quadros próximos são tratados juntos. | menor | maior |
+| **Reference** | Espaçamento ao escolher os quadros de referência. | **maior** | menor |
+
+- Quer que fique rápido? Defina **Resolution ≈ 50** e **Motion ≈ 4** (os padrões já favorecem a velocidade).
+- A área apagada parece borrada? Aumente **Resolution** em direção a **100**.
+- Isso afeta apenas o **vídeo**; as imagens não são afetadas.
+
 ---
 
 ## Visualização e utilidades
@@ -122,6 +154,6 @@ Clique novamente no botão da ferramenta (ou pressione **Esc**) para desativá-l
 | O Windows avisa ao abrir | Clique em **More info → Run anyway** (Mais informações → Executar mesmo assim) (o aplicativo é seguro, apenas não tem assinatura de código). |
 | Não consigo abrir vídeos | Você está na edição **Lite** — somente imagens. Use a edição **Pro**. |
 | Restam marcas fracas após a remoção | Pinte **de forma mais completa e ultrapassando um pouco as bordas**, depois execute novamente. |
-| O vídeo está muito lento | Normal — vídeo é pesado; aguarde, ou use um computador com placa de vídeo. |
+| O vídeo está muito lento | Reduza o controle deslizante **Resolution** (≈50) e **Motion** (≈4) — veja a seção *Controles deslizantes de velocidade ⇄ qualidade*. Uma GPU NVIDIA com CUDA (RTX 2060+) é fortemente recomendada — veja *Requisitos do sistema*. |
 
 Aproveite!

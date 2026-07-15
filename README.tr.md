@@ -51,6 +51,23 @@ Aralarındaki farkı anlamak için pencere başlığına bakın: **"Pro"** = tam
 
 ---
 
+## Sistem gereksinimleri
+
+| | **Lite** (görüntüler) | **Pro** (görüntüler + video) |
+|---|---|---|
+| İşletim sistemi | Windows 10/11 64-bit (veya macOS) | Windows 10/11 64-bit (veya macOS) |
+| CPU | **AVX2** destekli 64-bit | **AVX2** destekli 64-bit |
+| GPU | **gerekli değil** — CPU üzerinde çalışır | Video için **CUDA destekli NVIDIA GPU gerekir** |
+| VRAM | — | en az 4 GB · **6–8 GB önerilir** (HD / uzun klipler) |
+| RAM | 4 GB+ | 8 GB+ |
+| Ayrıca kurun | **Visual C++ Redistributable 2015–2022 x64** | aynısı + güncel bir **NVIDIA sürücüsü** |
+
+- **Pro video için CUDA destekli bir NVIDIA ekran kartı gerekir** — kabaca **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") veya daha yenisi**. Desteklenen bir NVIDIA GPU olmadan video motoru CPU'ya geri döner ve **son derece yavaşlar**.
+- **Görüntü** kaldırma işlemi **her iki** sürümde de **CPU üzerinde** sorunsuz çalışır — ekran kartı gerekmez.
+- AMD/Intel GPU'lar veya 16/20-series'ten eski NVIDIA kartları video için **hızlandırılmaz**.
+
+---
+
 ## Nasıl kullanılır — 4 adım
 
 ### Adım 1 — Bir görüntü/video açın
@@ -91,6 +108,21 @@ Aracı bırakmak için araç düğmesine tekrar tıklayın (ya da **Esc** tuşun
   (birden fazla video) düğmesine tıklayın; uygulama başladığında bir kayıt klasörü ister.
 - Video, yapay zeka ile kare kare işlenir, bu yüzden **görüntülerden çok daha yavaştır** — bırakın çalışsın.
 
+### Hız ⇄ kalite kaydırıcıları
+
+**Fırça boyutu** kaydırıcısının altında (sol sütun, yalnızca **Pro**) hızı kaliteyle takas etmek için dört kaydırıcı bulunur. İpucu görmek için herhangi bir kaydırıcının üzerine gelin; ayarlarınız hatırlanır.
+
+| Kaydırıcı | Ne kontrol eder | Daha hızlı | Daha keskin |
+|---|---|---|---|
+| **Resolution** | İşleme çözünürlüğü — en büyük hız kolu. Düşük = çok daha hızlı, silinen alan biraz yumuşak. | ~**50** | **100** |
+| **Motion** | Kareler arasındaki hareketin ne kadar ayrıntılı analiz edileceği (kalite neredeyse değişmez). | **2–4** | 20 |
+| **Frames** | Kaç komşu karenin birlikte işleneceği. | daha düşük | daha yüksek |
+| **Reference** | Referans kareleri seçilirken bırakılan aralık. | **daha yüksek** | daha düşük |
+
+- Hızlı mı olsun istiyorsunuz? **Resolution ≈ 50** ve **Motion ≈ 4** ayarlayın (varsayılanlar zaten hızı önceliyor).
+- Silinen alan bulanık mı görünüyor? **Resolution** değerini **100**'e doğru yükseltin.
+- Bunlar yalnızca **videoyu** etkiler; görüntüler etkilenmez.
+
 ---
 
 ## Görüntüleme ve yardımcı araçlar
@@ -122,6 +154,6 @@ Aracı bırakmak için araç düğmesine tekrar tıklayın (ya da **Esc** tuşun
 | Windows açılışta uyarı veriyor | **More info → Run anyway** (Daha fazla bilgi → Yine de çalıştır) seçeneğine tıklayın (uygulama güvenlidir, yalnızca kod imzalı değildir). |
 | Videolar açılamıyor | **Lite** sürümünü kullanıyorsunuz — yalnızca görüntüler. **Pro** sürümünü kullanın. |
 | Kaldırmadan sonra soluk izler kalıyor | Alanı **daha tam olarak ve kenarlardan biraz taşacak şekilde** boyayın, ardından tekrar Çalıştır'a tıklayın. |
-| Video çok yavaş | Normaldir — video ağır bir işlemdir; lütfen bekleyin veya ekran kartı olan bir makine kullanın. |
+| Video çok yavaş | **Resolution** kaydırıcısını (≈50) ve **Motion** değerini (≈4) düşürün — *Hız ⇄ kalite kaydırıcıları* bölümüne bakın. CUDA destekli bir NVIDIA GPU (RTX 2060+) şiddetle önerilir — *Sistem gereksinimleri* bölümüne bakın. |
 
 Keyfini çıkarın!

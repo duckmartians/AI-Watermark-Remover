@@ -55,16 +55,16 @@ Nhìn tiêu đề cửa sổ để biết bản nào: chữ **"Pro"** = bản đ
 
 | | **Lite** (ảnh) | **Pro** (ảnh + video) |
 |---|---|---|
-| Hệ điều hành | Windows 10/11 64-bit (hoặc macOS) | Windows 10/11 64-bit (hoặc macOS) |
+| Nền tảng | **Windows 10/11** 64-bit **và macOS** | **chỉ Windows 10/11 64-bit** — *không có macOS* |
 | CPU | 64-bit, có **AVX2** | 64-bit, có **AVX2** |
-| GPU | **không cần** — chạy bằng CPU | **cần GPU NVIDIA có CUDA** để xử lý video |
+| GPU | **không cần** — chạy bằng CPU | **bắt buộc GPU NVIDIA có CUDA** |
 | VRAM | — | tối thiểu 4 GB · **khuyến nghị 6–8 GB** (video HD / dài) |
 | RAM | 4 GB trở lên | 8 GB trở lên |
-| Cài thêm | **Visual C++ Redistributable 2015–2022 x64** | như trên + **driver NVIDIA** mới |
+| Cài thêm (Windows) | **Visual C++ Redistributable 2015–2022 x64** | như trên + **driver NVIDIA** mới |
 
-- **Bản Pro xử lý video cần card đồ họa NVIDIA có CUDA** — cỡ **RTX 2060 (dòng RTX 20 / GTX 16, kiến trúc "Turing") trở lên**. Không có GPU NVIDIA phù hợp thì engine video chạy bằng CPU và **rất chậm** (thường không dùng nổi).
+- Bản **Pro** xử lý video bằng **nhân CUDA của NVIDIA**, nên **chỉ chạy trên Windows và bắt buộc có card đồ họa NVIDIA** — cỡ **RTX 2060 (dòng RTX 20 / GTX 16, kiến trúc "Turing") trở lên**.
+- **macOS không có CUDA** → trên máy Mac hãy dùng bản **Lite** (xử lý ảnh). GPU AMD/Intel cũng **không chạy được** engine video của bản Pro.
 - **Xóa ẢNH** (cả hai bản) chạy tốt **bằng CPU**, không cần card đồ họa.
-- GPU AMD/Intel, hoặc NVIDIA đời cũ hơn dòng 16/20, **không được tăng tốc** cho video.
 - Không cần mạng, không gửi dữ liệu đi đâu — mọi thứ chạy tại máy.
 
 ---

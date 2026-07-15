@@ -55,16 +55,16 @@ Aralarındaki farkı anlamak için pencere başlığına bakın: **"Pro"** = tam
 
 | | **Lite** (görüntüler) | **Pro** (görüntüler + video) |
 |---|---|---|
-| İşletim sistemi | Windows 10/11 64-bit (veya macOS) | Windows 10/11 64-bit (veya macOS) |
+| Platform | **Windows 10/11** 64-bit **ve macOS** | **yalnızca Windows 10/11 64-bit** — *macOS yok* |
 | CPU | **AVX2** destekli 64-bit | **AVX2** destekli 64-bit |
-| GPU | **gerekli değil** — CPU üzerinde çalışır | Video için **CUDA destekli NVIDIA GPU gerekir** |
+| GPU | **gerekli değil** — CPU üzerinde çalışır | **CUDA destekli NVIDIA GPU gerekir** |
 | VRAM | — | en az 4 GB · **6–8 GB önerilir** (HD / uzun klipler) |
 | RAM | 4 GB+ | 8 GB+ |
-| Ayrıca kurun | **Visual C++ Redistributable 2015–2022 x64** | aynısı + güncel bir **NVIDIA sürücüsü** |
+| Ayrıca kurun (Windows) | **Visual C++ Redistributable 2015–2022 x64** | aynısı + güncel bir **NVIDIA sürücüsü** |
 
-- **Pro video için CUDA destekli bir NVIDIA ekran kartı gerekir** — kabaca **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") veya daha yenisi**. Desteklenen bir NVIDIA GPU olmadan video motoru CPU'ya geri döner ve **son derece yavaşlar**.
+- **Pro** sürümü video yapay zekâsını **NVIDIA CUDA çekirdekleri** üzerinde çalıştırır; bu nedenle **yalnızca Windows'ta çalışır ve bir NVIDIA ekran kartı gerektirir** — kabaca **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") veya daha yenisi**.
+- **macOS'ta CUDA yoktur** → Mac'te **Lite** sürümünü (görüntüler) kullanın. AMD/Intel GPU'lar da Pro video motoru tarafından **desteklenmez**.
 - **Görüntü** kaldırma işlemi **her iki** sürümde de **CPU üzerinde** sorunsuz çalışır — ekran kartı gerekmez.
-- AMD/Intel GPU'lar veya 16/20-series'ten eski NVIDIA kartları video için **hızlandırılmaz**.
 
 ---
 

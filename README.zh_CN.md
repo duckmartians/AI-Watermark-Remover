@@ -55,16 +55,16 @@
 
 | | **Lite**（图片） | **Pro**（图片 + 视频） |
 |---|---|---|
-| 操作系统 | Windows 10/11 64 位（或 macOS） | Windows 10/11 64 位（或 macOS） |
+| 平台 | **Windows 10/11** 64 位**和 macOS** | **仅 Windows 10/11 64 位** — *不支持 macOS* |
 | CPU | 64 位，支持 **AVX2** | 64 位，支持 **AVX2** |
-| GPU | **无需** — 用 CPU 运行 | 视频**需要支持 CUDA 的 NVIDIA GPU** |
+| GPU | **无需** — 用 CPU 运行 | **需要支持 CUDA 的 NVIDIA GPU** |
 | 显存 | — | 最低 4 GB · **推荐 6–8 GB**（高清 / 长视频） |
 | 内存 | 4 GB 以上 | 8 GB 以上 |
-| 另需安装 | **Visual C++ Redistributable 2015–2022 x64** | 同上 + 最新版 **NVIDIA 驱动** |
+| 另需安装（Windows） | **Visual C++ Redistributable 2015–2022 x64** | 同上 + 最新版 **NVIDIA 驱动** |
 
-- **Pro 版视频需要支持 CUDA 的 NVIDIA 显卡** — 大致为 **RTX 2060（RTX 20-series / GTX 16-series，"Turing"）或更新型号**。若没有受支持的 NVIDIA GPU，视频引擎会回退到 CPU，速度会变得**极其缓慢**。
+- **Pro** 版的视频 AI 运行在 **NVIDIA CUDA 核心**上，因此它**仅支持 Windows，并且必须有 NVIDIA 显卡** — 大致为 **RTX 2060（RTX 20-series / GTX 16-series，"Turing"）或更新型号**。
+- **macOS 没有 CUDA** → 在 Mac 上请使用 **Lite** 版（图片）。Pro 版的视频引擎同样**不支持** AMD/Intel 显卡。
 - 在**两个**版本中，**图片**去除都能在 **CPU** 上正常运行——无需显卡。
-- AMD/Intel 显卡，或早于 16/20 系列的 NVIDIA 显卡，视频处理**无法加速**。
 
 ---
 

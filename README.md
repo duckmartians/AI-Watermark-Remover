@@ -55,16 +55,16 @@ Check the window title to tell them apart: **"Pro"** = full edition, **"Lite"** 
 
 | | **Lite** (images) | **Pro** (images + video) |
 |---|---|---|
-| OS | Windows 10/11 64-bit (or macOS) | Windows 10/11 64-bit (or macOS) |
+| Platform | **Windows 10/11** 64-bit **and macOS** | **Windows 10/11 64-bit only** — *no macOS* |
 | CPU | 64-bit with **AVX2** | 64-bit with **AVX2** |
-| GPU | **not required** — runs on CPU | **NVIDIA GPU with CUDA required** for video |
+| GPU | **not required** — runs on CPU | **NVIDIA GPU with CUDA required** |
 | VRAM | — | 4 GB min · **6–8 GB recommended** (HD / long clips) |
 | RAM | 4 GB+ | 8 GB+ |
-| Also install | **Visual C++ Redistributable 2015–2022 x64** | same + an up-to-date **NVIDIA driver** |
+| Also install (Windows) | **Visual C++ Redistributable 2015–2022 x64** | same + an up-to-date **NVIDIA driver** |
 
-- **Pro video needs an NVIDIA graphics card with CUDA** — roughly **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") or newer**. Without a supported NVIDIA GPU the video engine falls back to the CPU and becomes **extremely slow** (often impractical).
+- The **Pro** edition runs its video AI on **NVIDIA CUDA cores**, so it is **Windows-only and requires an NVIDIA graphics card** — roughly **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") or newer**.
+- **macOS has no CUDA** → on a Mac, use the **Lite** edition (images). AMD/Intel GPUs are **not supported** by the Pro video engine either.
 - **Image** removal works fine **on CPU** in **both** editions — no graphics card needed.
-- AMD/Intel GPUs, or NVIDIA cards older than the 16/20-series, are **not accelerated** for video.
 - No internet is required and nothing is uploaded — everything runs locally.
 
 ---

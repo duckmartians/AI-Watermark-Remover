@@ -55,16 +55,16 @@ Verifique o título da janela para diferenciá-las: **"Pro"** = edição complet
 
 | | **Lite** (imagens) | **Pro** (imagens + vídeo) |
 |---|---|---|
-| SO | Windows 10/11 64 bits (ou macOS) | Windows 10/11 64 bits (ou macOS) |
+| Plataforma | **Windows 10/11** 64 bits **e macOS** | **somente Windows 10/11 64 bits** — *sem macOS* |
 | CPU | 64 bits com **AVX2** | 64 bits com **AVX2** |
-| GPU | **não é necessária** — roda na CPU | **GPU NVIDIA com CUDA obrigatória** para vídeo |
+| GPU | **não é necessária** — roda na CPU | **GPU NVIDIA com CUDA obrigatória** |
 | VRAM | — | 4 GB no mínimo · **6–8 GB recomendados** (HD / clipes longos) |
 | RAM | 4 GB+ | 8 GB+ |
-| Instale também | **Visual C++ Redistributable 2015–2022 x64** | o mesmo + um **driver NVIDIA** atualizado |
+| Instale também (Windows) | **Visual C++ Redistributable 2015–2022 x64** | o mesmo + um **driver NVIDIA** atualizado |
 
-- **O vídeo no Pro precisa de uma placa de vídeo NVIDIA com CUDA** — aproximadamente uma **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") ou mais recente**. Sem uma GPU NVIDIA compatível, o motor de vídeo recorre à CPU e fica **extremamente lento**.
+- A edição **Pro** roda sua IA de vídeo nos **núcleos CUDA da NVIDIA**, por isso ela é **exclusiva do Windows e exige uma placa de vídeo NVIDIA** — aproximadamente uma **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") ou mais recente**.
+- **O macOS não tem CUDA** → em um Mac, use a edição **Lite** (imagens). GPUs AMD/Intel também **não são compatíveis** com o motor de vídeo do Pro.
 - A remoção em **imagens** funciona bem **na CPU** em **ambas** as edições — nenhuma placa de vídeo é necessária.
-- GPUs AMD/Intel, ou placas NVIDIA anteriores às séries 16/20, **não têm aceleração** para vídeo.
 
 ---
 

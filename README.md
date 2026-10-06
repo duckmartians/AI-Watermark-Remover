@@ -1,161 +1,188 @@
-# AI Watermark Remover — User Guide
+<h1 align="center">AI Watermark Remover</h1>
 
-<p align="left">
-  <a href="https://github.com/duckmartians/AI-Watermark-Remover//releases/latest">
-    <img src="https://img.shields.io/badge/Windows-%F0%9F%92%BB-0078D6?style=for-the-badge&logo=windows&logoColor=white">
-  </a>
-  <a href="https://github.com/duckmartians/AI-Watermark-Remover//releases/latest">
-    <img src="https://img.shields.io/badge/macOS-%F0%9F%8D%8E-000000?style=for-the-badge&logo=apple&logoColor=white">
-  </a>
-</p>
-<p align="left">
-  <a href="https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3">
-    <img src="https://img.shields.io/badge/Windows-Drive%20backup-4285F4?style=flat-square&logo=googledrive&logoColor=white">
-  </a>
-  <a href="https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l">
-    <img src="https://img.shields.io/badge/macOS-Drive%20backup-4285F4?style=flat-square&logo=googledrive&logoColor=white">
-  </a>
-</p>
-<p align="left">
-  <a href="https://duckmartians.info">
-    <img src="https://img.shields.io/badge/Homepage-Visit-0A66C2?style=flat-square&logo=google-chrome&logoColor=white">
-  </a>
-  <a href="https://discord.gg/munMZEBMw5">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https://discord.com/api/guilds/1369302820037201981/widget.json&query=$.presence_count&label=Discord&color=5865F2&logo=discord&style=flat-square">
-  </a>
+<p align="center"><b>Paint over a logo, signature, text overlay or watermark on an image or video — AI fills it back in naturally, right on your computer, no internet needed.</b></p>
+
+<p align="center">
+  <b>English</b> ·
+  <a href="README.vi.md">Tiếng Việt</a> ·
+  <a href="README.bn.md">বাংলা</a> ·
+  <a href="README.hi.md">हिन्दी</a> ·
+  <a href="README.pt_BR.md">Português (BR)</a> ·
+  <a href="README.ru.md">Русский</a> ·
+  <a href="README.tr.md">Türkçe</a> ·
+  <a href="README.ur.md">اردو</a> ·
+  <a href="README.zh_CN.md">简体中文</a>
 </p>
 
-🌐 **English** · [Tiếng Việt](README.vi.md) · [বাংলা](README.bn.md) · [हिन्दी](README.hi.md) · [Português (BR)](README.pt_BR.md) · [Русский](README.ru.md) · [Türkçe](README.tr.md) · [اردو](README.ur.md) · [简体中文](README.zh_CN.md)
-
-This app helps you **remove logos, watermarks, signatures and text overlays from images and videos**.
-Just **paint over what you want gone** and the app fills it back in naturally. Everything runs
-**on your own computer** — **no internet needed**, and your images/videos are **never uploaded anywhere**.
-
----
-<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/dbcb0fad-cc38-49d6-b9c6-acd1c0e16983" />
-<img width="804" height="852" alt="image" src="https://github.com/user-attachments/assets/f07d1f33-e835-4c6c-b5b6-6b8db94b9cb9" />
-
-## Install & Open
-
-1. Run the installer (or unzip the folder if you received a compressed archive).
-2. Open **AI Watermark Remover** (from the Desktop, the Start menu, or the `.exe` file).
-
-> **Windows shows "Windows protected your PC"?**
-> This is the default warning for apps without a paid signing certificate — **it is not a virus**.
-> Click **More info → Run anyway** to open it.
-
-The first launch may take a little longer; subsequent launches are faster.
-
-**There are two editions:** the **Pro** edition (images + video) and the **Lite** edition (images only, lighter).
-Check the window title to tell them apart: **"Pro"** = full edition, **"Lite"** = light edition (cannot open videos).
+<p align="center">
+  <a href="https://github.com/duckmartians/AI-Watermark-Remover/releases/latest"><img alt="Download Lite for Windows" src="https://img.shields.io/badge/Download-Windows%20Lite-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a>&nbsp;
+  <a href="https://github.com/duckmartians/AI-Watermark-Remover/releases/latest"><img alt="Download Lite for macOS (Apple Silicon)" src="https://img.shields.io/badge/Download-macOS%20Apple%20Silicon%20Lite-000000?style=for-the-badge&logo=apple&logoColor=white"></a>&nbsp;
+  <a href="https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3"><img alt="Download Pro for Windows (Google Drive)" src="https://img.shields.io/badge/Download-Windows%20Pro-76B900?style=for-the-badge&logo=windows&logoColor=white"></a>
+</p>
 
 ---
 
-## System requirements
+## Install
 
-| | **Lite** (images) | **Pro** (images + video) |
-|---|---|---|
-| Platform | **Windows 10/11** 64-bit **and macOS** | **Windows 10/11 64-bit only** — *no macOS* |
-| CPU | 64-bit with **AVX2** | 64-bit with **AVX2** |
-| GPU | **not required** — runs on CPU | **NVIDIA GPU with CUDA required** |
-| VRAM | — | 4 GB min · **6–8 GB recommended** (HD / long clips) |
-| RAM | 4 GB+ | 8 GB+ |
-| Also install (Windows) | **Visual C++ Redistributable 2015–2022 x64** | same + an up-to-date **NVIDIA driver** |
+### Step 1 — Pick the right edition for your machine
 
-- The **Pro** edition runs its video AI on **NVIDIA CUDA cores**, so it is **Windows-only and requires an NVIDIA graphics card** — roughly **RTX 2060 (RTX 20-series / GTX 16-series, "Turing") or newer**.
-- **macOS has no CUDA** → on a Mac, use the **Lite** edition (images). AMD/Intel GPUs are **not supported** by the Pro video engine either.
-- **Image** removal works fine **on CPU** in **both** editions — no graphics card needed.
-- No internet is required and nothing is uploaded — everything runs locally.
+There are two editions. **Lite** removes watermarks from **images** and runs on the CPU. **Pro** handles **images and video** and needs a Windows PC with an NVIDIA card. The window title shows **"Lite"** or **"Pro"** so you always know which one you have.
+
+| Your machine | Download | Google Drive | Notes |
+|---|---|---|---|
+| 🪟 **Windows 10/11 (64-bit)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`Windows_AI_Watermark_Remover_Lite_…zip`) | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Images only · no graphics card needed |
+| 🍎 **Mac with Apple chip (M1/M2/M3/M4)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`MacOS_AI-Watermark-Remover-Lite-arm64_…dmg`) | [macOS](https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l) | Images only · there is no Intel Mac build |
+| 🪟 **Windows 10/11 (64-bit) + NVIDIA GPU** — Pro | — | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Images **and video** · the Pro edition is published on Google Drive only |
+
+> Pro needs an **NVIDIA** card with CUDA — AMD and Intel graphics are not supported. If you don't have one, use Lite (images only).
+
+**System requirements**
+
+| | |
+|---|---|
+| **Lite (images)** | Windows 10/11 64-bit or macOS on Apple Silicon · no GPU needed · 4 GB+ RAM |
+| **Pro (images + video)** | Windows 10/11 64-bit only · NVIDIA GPU with CUDA, 4 GB VRAM minimum (6–8 GB recommended for HD / long clips) · 8 GB+ RAM |
+| **CPU** | 64-bit with AVX2 support |
+| **Prerequisites (Windows)** | Visual C++ Redistributable 2015–2022 x64; Pro also needs an up-to-date NVIDIA driver |
+
+### Step 2 — Install
+
+<details open>
+<summary><b>🪟 On Windows</b></summary>
+
+1. **Lite:** download the `.zip` from Releases and **extract it**. **Pro:** download it from the Google Drive folder.
+2. Run the installer you got (or, if it is a ready-to-run folder, open **`AI Watermark Remover Lite.exe`** / **`AI Watermark Remover Pro.exe`** inside it).
+3. If **"Windows protected your PC"** (SmartScreen) appears: click **More info** → **Run anyway**. *(The app isn't signed with a paid certificate, so it's flagged — it isn't a virus.)*
+4. The installer asks for admin rights (it installs into Program Files) and can add a Desktop shortcut. Launch the app from the **Start Menu** or the **Desktop**.
+
+Lite and Pro are separate installs — you can keep both on the same PC and uninstall each one on its own.
+
+</details>
+
+<details open>
+<summary><b>🍎 On macOS</b></summary>
+
+1. Open the downloaded **`.dmg`**, then **drag AI Watermark Remover Lite into the Applications folder**.
+2. Go to **Applications**, **right-click** (or Control-click) **AI Watermark Remover Lite** → **Open** → click **Open** again in the dialog. *(The app isn't signed by Apple, so you must open it this way the **first time**; afterwards it opens normally.)*
+3. If macOS says the app is **"damaged / can't be opened"**, or there's no Open button, open **Terminal** and paste:
+   ```bash
+   xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"
+   ```
+   Then open the app again.
+
+</details>
+
+The first launch may take a little longer; later launches are faster.
+
+### Step 3 — Free, no account
+
+Both editions are **free** — no account, no license key, no file limits. The AI models ship inside the app, so it downloads nothing while it runs and **never uploads your images or videos** anywhere; everything works offline.
 
 ---
 
-## How to use — 4 steps
+## First run
 
-### Step 1 — Open an image/video
-- Click the **document** button to pick one or more files, or the **folder** button to open a whole folder.
-- Or **drag and drop** images/videos straight into the window.
-- With multiple files you get a thumbnail strip at the bottom; each item has an **×** to remove it from the list.
+1. **Open a file.** Click the **📄** button to pick one or more files, the **📁** button to open a whole folder, or **drag and drop** files into the window. If the files have different aspect ratios, the app asks which ratio to load (or all of them).
+2. **Paint over the watermark.** Pick **Brush**, **Box** or **Text** in the Tools column; the painted area shows in **soft red**. Cover it fully and spill over the edges a little — that looks better than under-painting.
+3. **Click Run.** The result replaces the painted area. With several files open, **Run all** applies the same painted area to every file of the same size.
+4. **Click Save** and choose an output folder (the app asks every time). Turn on **Add _clean** first if you want to keep the originals.
 
-### Step 2 — Paint over what to remove
-Pick a tool in the left column, then paint/outline over the watermark (the painted area shows as a **soft red**):
+---
+
+## Features
+
+- **Paint, box or type** — paint freely with the Brush, drag a Box for a quick cover, wipe extra paint with the Eraser, or type text over a text-style watermark to cover it precisely. The text is only a marker — it disappears after processing and is never baked into the image.
+- **Fix your selection** — Undo / Redo, Clear the whole painted area, or Reset to restore the original.
+- **Batch processing** — **Run all** applies the current painted area to every open file with the same aspect ratio; files with a different ratio are skipped and counted when it finishes.
+- **Video watermark removal (Pro)** — AI processes the video frame by frame, works only on the area around the watermark, puts the result back into the original frame and keeps the original audio. A built-in player lets you scrub through the clip with 100 / 75 / 50 / 25% preview quality.
+- **Save without overwriting** — Save one file and jump to the next, or **Save all** processed files into one folder; **Add _clean** gives new files a suffix (`photo.png` → `photo_clean.png`).
+- **Offline and private** — everything runs on your computer; nothing is uploaded.
+- **9 interface languages** — English, Tiếng Việt, বাংলা, हिन्दी, Português (BR), Русский, Türkçe, اردو, 简体中文 — switch with the globe icon.
+
+---
+
+## Tools & controls
+
+### 📂 Open
+
+**📄** opens one or more files, **📁** opens a whole folder, or drag files straight into the window. With several files a thumbnail strip appears at the bottom — click a thumbnail to switch, or its **×** to remove it from the list. Lite only accepts images; video files are filtered out.
+
+### 🖌 Tools
 
 | Tool | Use it to |
-|----|---|
-| **Brush** | Paint over the watermark (hold the left mouse button and drag). Adjust brush size with the slider below. |
+|---|---|
+| **Brush** | Paint over the watermark (hold the left mouse button and drag). Set the size with the slider, `Ctrl` + mouse wheel, or `[` / `]`. Hold the **right mouse button** to erase while painting. |
 | **Box** | Drag a rectangle over the watermark for a quick cover. |
-| **Eraser** | Wipe away extra painting. |
-| **Text** | Type text to precisely cover a text-style watermark. This text is only a **marker** — it disappears after processing and is not baked into the image. |
+| **Erase** | Wipe away extra paint. |
+| **Text** | Type text over a text watermark to cover it precisely (images only). `Delete` removes the selected text. |
 
-Painted too much? Use **Undo / Redo / Clear all / Reset** in the left column.
-Click the tool button again (or press **Esc**) to deselect it.
+Click the tool button again, or press **Esc**, to deselect it. **Undo / Redo / Clear / Reset** sit in the same column.
 
-> **Tip:** cover the watermark fully and spill over a little — results look better than under-painting.
+### ▶ Run
 
-### Step 3 — Click Run
-- **Run** — process the currently open image/video.
-- **Run all** — batch-process every file **with the same frame size** in the list
-  (enabled only when there are 2 or more files).
+**Run** processes the file you're looking at; **Run all** (shown when 2+ files are open) processes every file with the same aspect ratio. While a job runs the buttons turn into **Stop** / **Stop all**. Results stay in the app until you save them.
 
-### Step 4 — Save
-- Click **Save**. **Each time you save, the app asks you to choose a folder** for the output files.
-- Want to keep the originals? Enable the **"Add _clean"** option — new files get a `_clean` suffix
-  in their name (e.g. `photo.png` → `photo_clean.png`), so the original is not overwritten.
+### 🎬 Video (Pro)
 
----
+Open a video, pause on any frame and paint over the watermark with the Brush or Box (painting pauses playback). Use the play button and seek bar to check the clip, and the quality menu (100 / 75 / 50 / 25%) to keep the preview light. Video is processed frame by frame, so it's **much slower than images** — just let it run. When it's done, save it with **Save** or **Save all** like an image; the output is an `.mp4`.
 
-## Video processing (Pro edition)
+### 💾 Save
 
-- Videos are **not saved with the Save button**. Click **Run** (one video) or **Run all**
-  (multiple videos); the app asks for a save folder when it starts.
-- Video is processed frame by frame by AI on the **GPU**, so it is slower than images — just let it run.
+**Save** writes the current result and moves to the next file; **Save all** writes every processed file into one folder. The app asks for the output folder each time. Tick **Add _clean** to append `_clean` to file names instead of reusing the original name.
 
-### Speed ⇄ quality sliders
+### 🔍 View
 
-Under the **Brush size** slider (left column, **Pro** only) there are four sliders that let you trade
-**speed for quality**. Hover any slider to see a tip. Your settings are remembered.
+Mouse wheel to zoom, hold the middle button and drag to pan, **F** or double-click to fit the window. The **house** icon opens the homepage; the **globe** icon changes the language.
 
-| Slider | What it controls | Faster | Sharper |
-|---|---|---|---|
-| **Resolution** | Processing resolution — the **biggest** speed lever. Lower = much faster, erased area a little soft. | ~**50** | **100** |
-| **Motion** | How thoroughly motion between frames is analysed (quality barely changes). | **2–4** | 20 |
-| **Frames** | How many nearby frames are handled together. | lower | higher |
-| **Reference** | Spacing when picking reference frames. | **higher** | lower |
-
-- **Want it fast?** Set **Resolution ≈ 50** and **Motion ≈ 4** (defaults already favour speed).
-- **Erased area looks blurry?** Raise **Resolution** toward **100**.
-- These only affect **video**; images are unaffected.
-
----
-
-## Viewing & utilities
-
-- **Mouse wheel**: zoom in / out · **Hold middle mouse and drag**: pan · **F** or **double-click**: fit to window.
-- **House** icon: open the homepage. **Globe** icon: change language (9 languages supported, including Vietnamese).
-
-## Keyboard shortcuts
+### ⌨️ Keyboard shortcuts
 
 | Action | Key |
 |---|---|
 | Undo / Redo | `Ctrl+Z` / `Ctrl+Shift+Z` |
-| Change brush size | `Ctrl` + mouse wheel |
-| Fit to window | `F` or double-click |
+| Brush size | `Ctrl` + mouse wheel, or `[` / `]` |
+| Fit to window | `F`, `0` or double-click |
 | Deselect tool | `Esc` |
-| Quick erase (while using Brush) | Hold **right mouse button** |
+| Quick erase (while using Brush) | Hold the **right mouse button** |
+| Pan | Hold the **middle mouse button** and drag |
+
+### 🗂 Supported formats
+
+- **Images:** PNG, JPG/JPEG, WEBP, BMP, TIFF, PPM/PGM/PBM/PNM.
+- **Video (Pro):** MP4, M4V, MOV, WEBM, MKV, AVI, FLV, WMV, MPG/MPEG, TS/M2TS/MTS, 3GP, OGV. Output is saved as `.mp4`.
 
 ---
 
-## Supported formats
+## Where your data lives
 
-- **Images:** JPG, PNG, WEBP, BMP, TIFF and other common image formats.
-- **Video:** MP4, MOV, MKV, AVI, WEBM, WMV, FLV… (Pro edition).
+| What | Windows | macOS |
+|---|---|---|
+| Output images / videos | The folder you pick when saving | The folder you pick when saving |
+| Settings (language, Add _clean) | Registry: `HKEY_CURRENT_USER\Software\Duckmartians\AI Watermark Remover` | `~/Library/Preferences/com.duckmartians.AI Watermark Remover.plist` |
+| Unsaved results (temporary) | `%TEMP%\AIWatermarkRemover_work` | `AIWatermarkRemover_work` in the system temp folder |
+| Crash log | `%APPDATA%\AI Watermark Remover\crash.log` | `~/AI Watermark Remover/crash.log` |
+
+The temporary folder is cleared every time the app starts — **save your results before closing the app**.
+
+---
 
 ## Troubleshooting
 
-| Symptom | What to do |
-|---|---|
-| Windows warns on open | Click **More info → Run anyway** (the app is safe, it just isn't code-signed). |
-| Can't open videos | You're on the **Lite** edition — images only. Use the **Pro** edition. |
-| Faint marks remain after removal | Paint **more fully and slightly over the edges**, then Run again. |
-| Video is very slow | Lower the **Resolution** slider (≈50) and **Motion** (≈4) — see *Speed ⇄ quality sliders*. A CUDA NVIDIA GPU (RTX 2060+) is strongly recommended — see *System requirements*. |
+**Windows blocks it at "Windows protected your PC"** — click **More info → Run anyway**. The app isn't signed with a paid certificate, so it's flagged — it isn't a virus.
 
-Enjoy!
+**macOS says the app is damaged / can't be opened** — it isn't signed by Apple. Right-click → **Open** the first time, or run `xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"`.
+
+**Can't open videos** — you're on the **Lite** edition, which handles images only. Install **Pro** (Windows + NVIDIA card) to remove watermarks from video.
+
+**Save says videos are exported with Run** — that video hasn't been processed yet. Click **Run** (or **Run all**) first, then **Save**.
+
+**Run all skipped some files** — Run all only processes files with the same aspect ratio as the one you painted on. Open the others separately, or pick their ratio when opening.
+
+**Faint marks remain after removal** — paint more fully and slightly past the edges of the watermark, then Run again. Large areas over busy backgrounds can still leave traces.
+
+**Video is very slow** — normal: AI processes every frame, so video takes much longer than images. Just let it run; shorter clips and a card with more VRAM finish faster.
+
+**The app closes on its own** — send the `crash.log` file (see the table above) when you report the problem.
+
+---
+
+Only remove watermarks and logos from images and videos you own or have the right to edit.

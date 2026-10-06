@@ -1,6 +1,6 @@
 <h1 align="center">AI Watermark Remover</h1>
 
-<p align="center"><b>Tô lên logo, chữ ký, dòng chữ chèn hay watermark trên ảnh và video — AI tự vẽ lấp lại cho tự nhiên, chạy ngay trên máy bạn, không cần mạng.</b></p>
+<p align="center"><b>Tô lên logo, chữ ký, dòng chữ chèn hay watermark trên ảnh và video - AI tự vẽ lấp lại cho tự nhiên, chạy ngay trên máy bạn, không cần mạng.</b></p>
 
 <p align="center">
   <a href="README.md">English</a> ·
@@ -24,38 +24,38 @@
 
 ## Cài đặt
 
-### Bước 1 — Chọn đúng bản cho máy của bạn
+### Bước 1 - Chọn đúng bản cho máy của bạn
 
 Có hai bản. **Lite** xoá watermark trên **ảnh**, chạy bằng CPU. **Pro** xử lý **ảnh và video**, cần máy Windows có card NVIDIA. Tiêu đề cửa sổ ghi **"Lite"** hoặc **"Pro"** để bạn biết mình đang dùng bản nào.
 
 | Máy của bạn | Tải tệp | Google Drive | Ghi chú |
 |---|---|---|---|
-| 🪟 **Windows 10/11 (64-bit)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`Windows_AI_Watermark_Remover_Lite_…zip`) | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Chỉ ảnh · không cần card đồ hoạ |
-| 🍎 **Mac chip Apple (M1/M2/M3/M4)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`MacOS_AI-Watermark-Remover-Lite-arm64_…dmg`) | [macOS](https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l) | Chỉ ảnh · không có bản cho Mac chip Intel |
-| 🪟 **Windows 10/11 (64-bit) + GPU NVIDIA** — Pro | — | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Ảnh **và video** · bản Pro chỉ phát hành trên Google Drive |
+| 🪟 **Windows 10/11 (64-bit)** - Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`Windows_AI_Watermark_Remover_Lite_…zip`) | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Chỉ ảnh · không cần card đồ hoạ |
+| 🍎 **Mac chip Apple (M1/M2/M3/M4)** - Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`MacOS_AI-Watermark-Remover-Lite-arm64_…dmg`) | [macOS](https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l) | Chỉ ảnh · không có bản cho Mac chip Intel |
+| 🪟 **Windows 10/11 (64-bit) + GPU NVIDIA** - Pro | - | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Ảnh **và video** · bản Pro chỉ phát hành trên Google Drive |
 
-> Bản Pro cần card **NVIDIA** có CUDA — không hỗ trợ GPU AMD/Intel. Không có card NVIDIA thì dùng bản Lite (chỉ ảnh).
+> Bản Pro cần card **NVIDIA** có CUDA - không hỗ trợ GPU AMD/Intel. Không có card NVIDIA thì dùng bản Lite (chỉ ảnh).
 
 **Yêu cầu hệ thống**
 
 | | |
 |---|---|
 | **Lite (ảnh)** | Windows 10/11 64-bit hoặc macOS chip Apple · không cần GPU · RAM 4 GB trở lên |
-| **Pro (ảnh + video)** | Chỉ Windows 10/11 64-bit · GPU NVIDIA có CUDA, VRAM tối thiểu 4 GB (khuyên 6–8 GB cho video HD / dài) · RAM 8 GB trở lên |
+| **Pro (ảnh + video)** | Chỉ Windows 10/11 64-bit · GPU NVIDIA có CUDA, VRAM tối thiểu 4 GB (khuyên 6-8 GB cho video HD / dài) · RAM 8 GB trở lên |
 | **CPU** | 64-bit có hỗ trợ AVX2 |
-| **Cần cài sẵn (Windows)** | Visual C++ Redistributable 2015–2022 x64; bản Pro cần thêm driver NVIDIA mới |
+| **Cần cài sẵn (Windows)** | Visual C++ Redistributable 2015-2022 x64; bản Pro cần thêm driver NVIDIA mới |
 
-### Bước 2 — Cài đặt
+### Bước 2 - Cài đặt
 
 <details open>
 <summary><b>🪟 Trên Windows</b></summary>
 
 1. **Lite:** tải tệp `.zip` ở Releases rồi **giải nén**. **Pro:** tải trong thư mục Google Drive.
 2. Chạy file cài đặt vừa tải (hoặc, nếu là thư mục chạy sẵn, mở **`AI Watermark Remover Lite.exe`** / **`AI Watermark Remover Pro.exe`** trong đó).
-3. Nếu hiện **"Windows protected your PC"** (SmartScreen): bấm **More info** → **Run anyway**. *(App chưa ký chứng chỉ trả phí nên bị cảnh báo — không phải virus.)*
+3. Nếu hiện **"Windows protected your PC"** (SmartScreen): bấm **More info** → **Run anyway**. *(App chưa ký chứng chỉ trả phí nên bị cảnh báo - không phải virus.)*
 4. Trình cài đặt hỏi quyền admin (cài vào Program Files) và có tuỳ chọn tạo lối tắt ngoài Desktop. Mở app từ **Start Menu** hoặc **Desktop**.
 
-Lite và Pro là hai bản cài riêng — có thể để cả hai trên cùng một máy và gỡ từng bản độc lập.
+Lite và Pro là hai bản cài riêng - có thể để cả hai trên cùng một máy và gỡ từng bản độc lập.
 
 </details>
 
@@ -74,9 +74,9 @@ Lite và Pro là hai bản cài riêng — có thể để cả hai trên cùng 
 
 Lần mở đầu có thể hơi lâu, các lần sau sẽ nhanh hơn.
 
-### Bước 3 — Miễn phí, không cần tài khoản
+### Bước 3 - Miễn phí, không cần tài khoản
 
-Cả hai bản đều **miễn phí** — không tài khoản, không key bản quyền, không giới hạn số tệp. Mô hình AI đóng gói sẵn trong app nên khi chạy app không tải gì về và **không gửi ảnh/video của bạn** đi đâu; mọi thứ chạy offline.
+Cả hai bản đều **miễn phí** - không tài khoản, không key bản quyền, không giới hạn số tệp. Mô hình AI đóng gói sẵn trong app nên khi chạy app không tải gì về và **không gửi ảnh/video của bạn** đi đâu; mọi thứ chạy offline.
 
 ---
 
@@ -91,13 +91,13 @@ Cả hai bản đều **miễn phí** — không tài khoản, không key bản 
 
 ## Tính năng
 
-- **Tô, khoanh khung hoặc gõ chữ** — tô tự do bằng Cọ, kéo Khung để che nhanh, xoá chỗ tô thừa bằng Tẩy, hoặc gõ chữ đè lên watermark dạng chữ để che cho chính xác. Chữ này chỉ để đánh dấu — xử lý xong sẽ biến mất, không dính vào ảnh.
-- **Sửa vùng chọn** — Hoàn tác / Làm lại, Xóa toàn bộ vùng tô, hoặc Về gốc để lấy lại ảnh ban đầu.
-- **Xử lý hàng loạt** — **Chạy tất cả** áp vùng tô hiện tại cho mọi tệp đang mở cùng tỉ lệ khung hình; tệp khác tỉ lệ được bỏ qua và báo số lượng khi xong.
-- **Xoá watermark video (Pro)** — AI xử lý video từng khung hình, chỉ làm ở vùng quanh watermark, ghép kết quả về khung gốc và giữ nguyên tiếng gốc. Trình phát có sẵn cho tua xem với chất lượng xem trước 100 / 75 / 50 / 25%.
-- **Lưu không đè tệp gốc** — Lưu một tệp rồi sang tệp kế, hoặc **Lưu tất cả** tệp đã xử lý vào một thư mục; **Thêm _clean** thêm hậu tố vào tên tệp mới (`anh.png` → `anh_clean.png`).
-- **Offline và riêng tư** — mọi thứ chạy trên máy bạn, không tải lên đâu.
-- **9 ngôn ngữ giao diện** — English, Tiếng Việt, বাংলা, हिन्दी, Português (BR), Русский, Türkçe, اردو, 简体中文 — đổi bằng biểu tượng quả địa cầu.
+- **Tô, khoanh khung hoặc gõ chữ** - tô tự do bằng Cọ, kéo Khung để che nhanh, xoá chỗ tô thừa bằng Tẩy, hoặc gõ chữ đè lên watermark dạng chữ để che cho chính xác. Chữ này chỉ để đánh dấu - xử lý xong sẽ biến mất, không dính vào ảnh.
+- **Sửa vùng chọn** - Hoàn tác / Làm lại, Xóa toàn bộ vùng tô, hoặc Về gốc để lấy lại ảnh ban đầu.
+- **Xử lý hàng loạt** - **Chạy tất cả** áp vùng tô hiện tại cho mọi tệp đang mở cùng tỉ lệ khung hình; tệp khác tỉ lệ được bỏ qua và báo số lượng khi xong.
+- **Xoá watermark video (Pro)** - AI xử lý video từng khung hình, chỉ làm ở vùng quanh watermark, ghép kết quả về khung gốc và giữ nguyên tiếng gốc. Trình phát có sẵn cho tua xem với chất lượng xem trước 100 / 75 / 50 / 25%.
+- **Lưu không đè tệp gốc** - Lưu một tệp rồi sang tệp kế, hoặc **Lưu tất cả** tệp đã xử lý vào một thư mục; **Thêm _clean** thêm hậu tố vào tên tệp mới (`anh.png` → `anh_clean.png`).
+- **Offline và riêng tư** - mọi thứ chạy trên máy bạn, không tải lên đâu.
+- **9 ngôn ngữ giao diện** - English, Tiếng Việt, বাংলা, हिन्दी, Português (BR), Русский, Türkçe, اردو, 简体中文 - đổi bằng biểu tượng quả địa cầu.
 
 ---
 
@@ -105,7 +105,7 @@ Cả hai bản đều **miễn phí** — không tài khoản, không key bản 
 
 ### 📂 Mở
 
-**📄** mở một hay nhiều tệp, **📁** mở cả thư mục, hoặc kéo tệp thẳng vào cửa sổ. Mở nhiều tệp thì có dải ảnh nhỏ ở dưới — bấm ảnh nhỏ để chuyển, hoặc dấu **×** để bỏ khỏi danh sách. Bản Lite chỉ nhận ảnh; tệp video bị lọc ra.
+**📄** mở một hay nhiều tệp, **📁** mở cả thư mục, hoặc kéo tệp thẳng vào cửa sổ. Mở nhiều tệp thì có dải ảnh nhỏ ở dưới - bấm ảnh nhỏ để chuyển, hoặc dấu **×** để bỏ khỏi danh sách. Bản Lite chỉ nhận ảnh; tệp video bị lọc ra.
 
 ### 🖌 Công cụ
 
@@ -124,7 +124,7 @@ Bấm lại nút công cụ, hoặc phím **Esc**, để bỏ chọn. **Hoàn t�
 
 ### 🎬 Video (Pro)
 
-Mở video, dừng ở khung bất kỳ và tô lên watermark bằng Cọ hoặc Khung (bắt đầu tô là video tự dừng phát). Dùng nút phát và thanh tua để xem lại, chọn chất lượng xem trước (100 / 75 / 50 / 25%) cho nhẹ máy. Video xử lý từng khung hình nên **chậm hơn ảnh khá nhiều** — cứ để nó chạy. Xong thì lưu bằng **Lưu** hoặc **Lưu tất cả** như ảnh; tệp xuất ra là `.mp4`.
+Mở video, dừng ở khung bất kỳ và tô lên watermark bằng Cọ hoặc Khung (bắt đầu tô là video tự dừng phát). Dùng nút phát và thanh tua để xem lại, chọn chất lượng xem trước (100 / 75 / 50 / 25%) cho nhẹ máy. Video xử lý từng khung hình nên **chậm hơn ảnh khá nhiều** - cứ để nó chạy. Xong thì lưu bằng **Lưu** hoặc **Lưu tất cả** như ảnh; tệp xuất ra là `.mp4`.
 
 ### 💾 Lưu
 
@@ -161,27 +161,27 @@ Lăn chuột để phóng to/thu nhỏ, giữ chuột giữa và kéo để di c
 | Kết quả chưa lưu (tạm) | `%TEMP%\AIWatermarkRemover_work` | `AIWatermarkRemover_work` trong thư mục tạm của hệ thống |
 | Nhật ký lỗi | `%APPDATA%\AI Watermark Remover\crash.log` | `~/AI Watermark Remover/crash.log` |
 
-Thư mục tạm được dọn mỗi lần mở app — **hãy lưu kết quả trước khi đóng app**.
+Thư mục tạm được dọn mỗi lần mở app - **hãy lưu kết quả trước khi đóng app**.
 
 ---
 
 ## Khắc phục sự cố
 
-**Windows chặn với "Windows protected your PC"** — bấm **More info → Run anyway**. App chưa ký chứng chỉ trả phí nên bị cảnh báo — không phải virus.
+**Windows chặn với "Windows protected your PC"** - bấm **More info → Run anyway**. App chưa ký chứng chỉ trả phí nên bị cảnh báo - không phải virus.
 
-**macOS báo app bị hỏng / không mở được** — app chưa được Apple ký. Lần đầu chuột phải → **Open**, hoặc chạy `xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"`.
+**macOS báo app bị hỏng / không mở được** - app chưa được Apple ký. Lần đầu chuột phải → **Open**, hoặc chạy `xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"`.
 
-**Không mở được video** — bạn đang dùng bản **Lite**, chỉ xử lý ảnh. Cài bản **Pro** (Windows + card NVIDIA) để xoá watermark video.
+**Không mở được video** - bạn đang dùng bản **Lite**, chỉ xử lý ảnh. Cài bản **Pro** (Windows + card NVIDIA) để xoá watermark video.
 
-**Bấm Lưu thì báo video xuất bằng "Chạy"** — video đó chưa được xử lý. Bấm **Chạy** (hoặc **Chạy tất cả**) trước, rồi mới **Lưu**.
+**Bấm Lưu thì báo video xuất bằng "Chạy"** - video đó chưa được xử lý. Bấm **Chạy** (hoặc **Chạy tất cả**) trước, rồi mới **Lưu**.
 
-**Chạy tất cả bỏ qua một số tệp** — Chạy tất cả chỉ xử lý tệp cùng tỉ lệ khung hình với tệp bạn đã tô. Mở các tệp kia riêng, hoặc chọn tỉ lệ của chúng khi mở.
+**Chạy tất cả bỏ qua một số tệp** - Chạy tất cả chỉ xử lý tệp cùng tỉ lệ khung hình với tệp bạn đã tô. Mở các tệp kia riêng, hoặc chọn tỉ lệ của chúng khi mở.
 
-**Xoá xong vẫn còn vết mờ** — tô kín hơn và lố ra ngoài mép watermark một chút rồi Chạy lại. Vùng lớn trên nền nhiều chi tiết vẫn có thể còn dấu vết.
+**Xoá xong vẫn còn vết mờ** - tô kín hơn và lố ra ngoài mép watermark một chút rồi Chạy lại. Vùng lớn trên nền nhiều chi tiết vẫn có thể còn dấu vết.
 
-**Video chạy rất lâu** — bình thường: AI xử lý từng khung hình nên video lâu hơn ảnh nhiều. Cứ để nó chạy; clip ngắn hơn và card nhiều VRAM hơn sẽ xong nhanh hơn.
+**Video chạy rất lâu** - bình thường: AI xử lý từng khung hình nên video lâu hơn ảnh nhiều. Cứ để nó chạy; clip ngắn hơn và card nhiều VRAM hơn sẽ xong nhanh hơn.
 
-**App tự tắt** — khi báo lỗi, gửi kèm tệp `crash.log` (xem bảng ở trên).
+**App tự tắt** - khi báo lỗi, gửi kèm tệp `crash.log` (xem bảng ở trên).
 
 ---
 

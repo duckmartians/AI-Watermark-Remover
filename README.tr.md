@@ -1,6 +1,6 @@
 <h1 align="center">AI Watermark Remover</h1>
 
-<p align="center"><b>Bir görsel veya videodaki logo, imza, üst yazı ya da filigranın üzerini boyayın — yapay zekâ alanı doğal şekilde doldurur, doğrudan bilgisayarınızda, internet gerekmeden.</b></p>
+<p align="center"><b>Bir görsel veya videodaki logo, imza, üst yazı ya da filigranın üzerini boyayın - yapay zekâ alanı doğal şekilde doldurur, doğrudan bilgisayarınızda, internet gerekmeden.</b></p>
 
 <p align="center">
   <a href="README.md">English</a> ·
@@ -24,38 +24,38 @@
 
 ## Kurulum
 
-### Adım 1 — Makinenize uygun sürümü seçin
+### Adım 1 - Makinenize uygun sürümü seçin
 
 İki sürüm vardır. **Lite** **görsellerdeki** filigranları kaldırır ve CPU üzerinde çalışır. **Pro** **görsel ve videoları** işler; NVIDIA kartlı bir Windows bilgisayar gerektirir. Pencere başlığında **"Lite"** ya da **"Pro"** yazar, böylece hangisini kullandığınızı her zaman bilirsiniz.
 
 | Makineniz | İndir | Google Drive | Not |
 |---|---|---|---|
-| 🪟 **Windows 10/11 (64-bit)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`Windows_AI_Watermark_Remover_Lite_…zip`) | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Yalnızca görsel · ekran kartı gerekmez |
-| 🍎 **Apple çipli Mac (M1/M2/M3/M4)** — Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`MacOS_AI-Watermark-Remover-Lite-arm64_…dmg`) | [macOS](https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l) | Yalnızca görsel · Intel Mac sürümü yok |
-| 🪟 **Windows 10/11 (64-bit) + NVIDIA GPU** — Pro | — | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Görsel **ve video** · Pro sürümü yalnızca Google Drive'da yayınlanır |
+| 🪟 **Windows 10/11 (64-bit)** - Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`Windows_AI_Watermark_Remover_Lite_…zip`) | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Yalnızca görsel · ekran kartı gerekmez |
+| 🍎 **Apple çipli Mac (M1/M2/M3/M4)** - Lite | [Releases](https://github.com/duckmartians/AI-Watermark-Remover/releases/latest) (`MacOS_AI-Watermark-Remover-Lite-arm64_…dmg`) | [macOS](https://drive.google.com/drive/u/0/folders/1xKEA4WndYDrLD1c95MQRX2KhTVB_Op8l) | Yalnızca görsel · Intel Mac sürümü yok |
+| 🪟 **Windows 10/11 (64-bit) + NVIDIA GPU** - Pro | - | [Windows](https://drive.google.com/drive/u/0/folders/1FwJ8C8Rx-nqpOh5wErXWz-p3LucWNwW3) | Görsel **ve video** · Pro sürümü yalnızca Google Drive'da yayınlanır |
 
-> Pro, CUDA destekli bir **NVIDIA** kartı gerektirir — AMD ve Intel ekran kartları desteklenmez. Yoksa Lite'ı kullanın (yalnızca görsel).
+> Pro, CUDA destekli bir **NVIDIA** kartı gerektirir - AMD ve Intel ekran kartları desteklenmez. Yoksa Lite'ı kullanın (yalnızca görsel).
 
 **Sistem gereksinimleri**
 
 | | |
 |---|---|
 | **Lite (görsel)** | Windows 10/11 64-bit veya Apple Silicon macOS · GPU gerekmez · 4 GB+ RAM |
-| **Pro (görsel + video)** | Yalnızca Windows 10/11 64-bit · CUDA destekli NVIDIA GPU, en az 4 GB VRAM (HD / uzun klipler için 6–8 GB önerilir) · 8 GB+ RAM |
+| **Pro (görsel + video)** | Yalnızca Windows 10/11 64-bit · CUDA destekli NVIDIA GPU, en az 4 GB VRAM (HD / uzun klipler için 6-8 GB önerilir) · 8 GB+ RAM |
 | **CPU** | AVX2 destekli 64-bit |
-| **Ön koşullar (Windows)** | Visual C++ Redistributable 2015–2022 x64; Pro ayrıca güncel bir NVIDIA sürücüsü ister |
+| **Ön koşullar (Windows)** | Visual C++ Redistributable 2015-2022 x64; Pro ayrıca güncel bir NVIDIA sürücüsü ister |
 
-### Adım 2 — Kurun
+### Adım 2 - Kurun
 
 <details open>
 <summary><b>🪟 Windows'ta</b></summary>
 
 1. **Lite:** Releases'tan `.zip` dosyasını indirip **çıkarın**. **Pro:** Google Drive klasöründen indirin.
 2. İndirdiğiniz kurulum dosyasını çalıştırın (ya da hazır çalışan bir klasörse içindeki **`AI Watermark Remover Lite.exe`** / **`AI Watermark Remover Pro.exe`** dosyasını açın).
-3. **"Windows protected your PC"** (SmartScreen) çıkarsa: **More info** → **Run anyway**'e tıklayın. *(Uygulama ücretli bir sertifikayla imzalanmadığı için işaretlenir — virüs değildir.)*
+3. **"Windows protected your PC"** (SmartScreen) çıkarsa: **More info** → **Run anyway**'e tıklayın. *(Uygulama ücretli bir sertifikayla imzalanmadığı için işaretlenir - virüs değildir.)*
 4. Kurulum yönetici izni ister (Program Files'a kurar) ve masaüstü kısayolu ekleyebilir. Uygulamayı **Başlat Menüsü**'nden veya **Masaüstü**'nden açın.
 
-Lite ve Pro ayrı kurulumlardır — ikisini aynı bilgisayarda tutabilir, her birini ayrı ayrı kaldırabilirsiniz.
+Lite ve Pro ayrı kurulumlardır - ikisini aynı bilgisayarda tutabilir, her birini ayrı ayrı kaldırabilirsiniz.
 
 </details>
 
@@ -74,16 +74,16 @@ Lite ve Pro ayrı kurulumlardır — ikisini aynı bilgisayarda tutabilir, her b
 
 İlk açılış biraz daha uzun sürebilir; sonrakiler daha hızlıdır.
 
-### Adım 3 — Ücretsiz, hesap gerekmez
+### Adım 3 - Ücretsiz, hesap gerekmez
 
-İki sürüm de **ücretsizdir** — hesap yok, lisans anahtarı yok, dosya sınırı yok. Yapay zekâ modelleri uygulamanın içinde gelir; çalışırken hiçbir şey indirmez ve **görsellerinizi ya da videolarınızı hiçbir yere göndermez**; her şey çevrimdışı çalışır.
+İki sürüm de **ücretsizdir** - hesap yok, lisans anahtarı yok, dosya sınırı yok. Yapay zekâ modelleri uygulamanın içinde gelir; çalışırken hiçbir şey indirmez ve **görsellerinizi ya da videolarınızı hiçbir yere göndermez**; her şey çevrimdışı çalışır.
 
 ---
 
 ## İlk çalıştırma
 
 1. **Bir dosya açın.** Bir veya daha fazla dosya seçmek için **📄**, bütün bir klasörü açmak için **📁** düğmesine tıklayın ya da dosyaları pencereye **sürükleyip bırakın**. Dosyaların en-boy oranları farklıysa uygulama hangi oranı (veya hepsini) yükleyeceğinizi sorar.
-2. **Filigranın üzerini boyayın.** Araçlar sütunundan **Fırça**, **Kutu** veya **Metin** seçin; boyanan alan **soluk kırmızı** görünür. Tamamen kaplayın ve kenarlardan biraz taşırın — eksik boyamaktan daha iyi sonuç verir.
+2. **Filigranın üzerini boyayın.** Araçlar sütunundan **Fırça**, **Kutu** veya **Metin** seçin; boyanan alan **soluk kırmızı** görünür. Tamamen kaplayın ve kenarlardan biraz taşırın - eksik boyamaktan daha iyi sonuç verir.
 3. **Çalıştır'a tıklayın.** Sonuç boyanan alanın yerine geçer. Birden fazla dosya açıkken **Tümünü çalıştır**, aynı boyuttaki tüm dosyalara aynı boyalı alanı uygular.
 4. **Kaydet'e tıklayın** ve bir çıktı klasörü seçin (uygulama her seferinde sorar). Orijinalleri korumak istiyorsanız önce **_clean ekle**'yi açın.
 
@@ -91,13 +91,13 @@ Lite ve Pro ayrı kurulumlardır — ikisini aynı bilgisayarda tutabilir, her b
 
 ## Özellikler
 
-- **Boyayın, kutu çizin veya yazın** — Fırça ile serbestçe boyayın, hızlı kaplama için Kutu sürükleyin, fazlasını Sil ile temizleyin ya da metin tipi bir filigranı tam kaplamak için üzerine metin yazın. Metin yalnızca bir işarettir — işlemden sonra kaybolur, görsele asla işlenmez.
-- **Seçimi düzeltin** — Geri al / Yinele, tüm boyalı alanı Temizle veya görseli geri getirmek için Orijinal.
-- **Toplu işleme** — **Tümünü çalıştır**, mevcut boyalı alanı aynı en-boy oranındaki tüm açık dosyalara uygular; farklı orandaki dosyalar atlanır ve sonunda sayılır.
-- **Videodan filigran kaldırma (Pro)** — yapay zekâ videoyu kare kare işler, yalnızca filigranın çevresinde çalışır, sonucu orijinal kareye geri koyar ve orijinal sesi korur. Yerleşik oynatıcıyla klibi 100 / 75 / 50 / 25% önizleme kalitesinde gezebilirsiniz.
-- **Üzerine yazmadan kaydetme** — Bir dosyayı kaydedip sonrakine geçin veya işlenmiş tüm dosyaları **Tümünü kaydet** ile tek klasöre yazın; **_clean ekle** yeni dosyalara son ek ekler (`foto.png` → `foto_clean.png`).
-- **Çevrimdışı ve gizli** — her şey bilgisayarınızda çalışır; hiçbir şey yüklenmez.
-- **9 arayüz dili** — English, Tiếng Việt, বাংলা, हिन्दी, Português (BR), Русский, Türkçe, اردو, 简体中文 — dünya simgesiyle değiştirin.
+- **Boyayın, kutu çizin veya yazın** - Fırça ile serbestçe boyayın, hızlı kaplama için Kutu sürükleyin, fazlasını Sil ile temizleyin ya da metin tipi bir filigranı tam kaplamak için üzerine metin yazın. Metin yalnızca bir işarettir - işlemden sonra kaybolur, görsele asla işlenmez.
+- **Seçimi düzeltin** - Geri al / Yinele, tüm boyalı alanı Temizle veya görseli geri getirmek için Orijinal.
+- **Toplu işleme** - **Tümünü çalıştır**, mevcut boyalı alanı aynı en-boy oranındaki tüm açık dosyalara uygular; farklı orandaki dosyalar atlanır ve sonunda sayılır.
+- **Videodan filigran kaldırma (Pro)** - yapay zekâ videoyu kare kare işler, yalnızca filigranın çevresinde çalışır, sonucu orijinal kareye geri koyar ve orijinal sesi korur. Yerleşik oynatıcıyla klibi 100 / 75 / 50 / 25% önizleme kalitesinde gezebilirsiniz.
+- **Üzerine yazmadan kaydetme** - Bir dosyayı kaydedip sonrakine geçin veya işlenmiş tüm dosyaları **Tümünü kaydet** ile tek klasöre yazın; **_clean ekle** yeni dosyalara son ek ekler (`foto.png` → `foto_clean.png`).
+- **Çevrimdışı ve gizli** - her şey bilgisayarınızda çalışır; hiçbir şey yüklenmez.
+- **9 arayüz dili** - English, Tiếng Việt, বাংলা, हिन्दी, Português (BR), Русский, Türkçe, اردو, 简体中文 - dünya simgesiyle değiştirin.
 
 ---
 
@@ -105,7 +105,7 @@ Lite ve Pro ayrı kurulumlardır — ikisini aynı bilgisayarda tutabilir, her b
 
 ### 📂 Aç
 
-**📄** bir veya daha fazla dosya açar, **📁** bütün bir klasörü açar; dosyaları doğrudan pencereye de sürükleyebilirsiniz. Birden fazla dosyada altta bir küçük resim şeridi çıkar — geçiş için küçük resme, listeden çıkarmak için **×**'e tıklayın. Lite yalnızca görsel kabul eder; video dosyaları elenir.
+**📄** bir veya daha fazla dosya açar, **📁** bütün bir klasörü açar; dosyaları doğrudan pencereye de sürükleyebilirsiniz. Birden fazla dosyada altta bir küçük resim şeridi çıkar - geçiş için küçük resme, listeden çıkarmak için **×**'e tıklayın. Lite yalnızca görsel kabul eder; video dosyaları elenir.
 
 ### 🖌 Araçlar
 
@@ -124,7 +124,7 @@ Aracı bırakmak için düğmesine yeniden tıklayın veya **Esc**'ye basın. **
 
 ### 🎬 Video (Pro)
 
-Bir video açın, herhangi bir karede durdurun ve filigranın üzerini Fırça veya Kutu ile boyayın (boyamaya başlamak oynatmayı duraklatır). Klibi kontrol etmek için oynat düğmesini ve arama çubuğunu, önizlemeyi hafif tutmak için kalite menüsünü (100 / 75 / 50 / 25%) kullanın. Video kare kare işlendiği için **görsellerden çok daha yavaştır** — bırakın çalışsın. Bitince görsel gibi **Kaydet** veya **Tümünü kaydet** ile kaydedin; çıktı `.mp4` olur.
+Bir video açın, herhangi bir karede durdurun ve filigranın üzerini Fırça veya Kutu ile boyayın (boyamaya başlamak oynatmayı duraklatır). Klibi kontrol etmek için oynat düğmesini ve arama çubuğunu, önizlemeyi hafif tutmak için kalite menüsünü (100 / 75 / 50 / 25%) kullanın. Video kare kare işlendiği için **görsellerden çok daha yavaştır** - bırakın çalışsın. Bitince görsel gibi **Kaydet** veya **Tümünü kaydet** ile kaydedin; çıktı `.mp4` olur.
 
 ### 💾 Kaydet
 
@@ -161,27 +161,27 @@ Yakınlaştırmak için fare tekerleği, kaydırmak için orta tuşu basılı tu
 | Kaydedilmemiş sonuçlar (geçici) | `%TEMP%\AIWatermarkRemover_work` | Sistem geçici klasöründe `AIWatermarkRemover_work` |
 | Çökme günlüğü | `%APPDATA%\AI Watermark Remover\crash.log` | `~/AI Watermark Remover/crash.log` |
 
-Geçici klasör uygulama her açıldığında temizlenir — **uygulamayı kapatmadan önce sonuçlarınızı kaydedin**.
+Geçici klasör uygulama her açıldığında temizlenir - **uygulamayı kapatmadan önce sonuçlarınızı kaydedin**.
 
 ---
 
 ## Sorun giderme
 
-**Windows "Windows protected your PC" ile engelliyor** — **More info → Run anyway**'e tıklayın. Uygulama ücretli bir sertifikayla imzalanmadığı için işaretlenir — virüs değildir.
+**Windows "Windows protected your PC" ile engelliyor** - **More info → Run anyway**'e tıklayın. Uygulama ücretli bir sertifikayla imzalanmadığı için işaretlenir - virüs değildir.
 
-**macOS uygulamanın hasarlı / açılamadığını söylüyor** — Apple tarafından imzalanmamıştır. İlk seferde sağ tık → **Aç**, ya da `xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"` komutunu çalıştırın.
+**macOS uygulamanın hasarlı / açılamadığını söylüyor** - Apple tarafından imzalanmamıştır. İlk seferde sağ tık → **Aç**, ya da `xattr -dr com.apple.quarantine "/Applications/AI Watermark Remover Lite.app"` komutunu çalıştırın.
 
-**Videolar açılmıyor** — yalnızca görselleri işleyen **Lite** sürümündesiniz. Videodan filigran kaldırmak için **Pro**'yu kurun (Windows + NVIDIA kart).
+**Videolar açılmıyor** - yalnızca görselleri işleyen **Lite** sürümündesiniz. Videodan filigran kaldırmak için **Pro**'yu kurun (Windows + NVIDIA kart).
 
-**Kaydederken videoların "Çalıştır" ile dışa aktarıldığı söyleniyor** — o video henüz işlenmedi. Önce **Çalıştır** (veya **Tümünü çalıştır**), sonra **Kaydet**'e tıklayın.
+**Kaydederken videoların "Çalıştır" ile dışa aktarıldığı söyleniyor** - o video henüz işlenmedi. Önce **Çalıştır** (veya **Tümünü çalıştır**), sonra **Kaydet**'e tıklayın.
 
-**Tümünü çalıştır bazı dosyaları atladı** — yalnızca boyadığınız dosyayla aynı en-boy oranındaki dosyalar işlenir. Diğerlerini ayrıca açın veya açarken onların oranını seçin.
+**Tümünü çalıştır bazı dosyaları atladı** - yalnızca boyadığınız dosyayla aynı en-boy oranındaki dosyalar işlenir. Diğerlerini ayrıca açın veya açarken onların oranını seçin.
 
-**Kaldırmadan sonra soluk izler kalıyor** — daha eksiksiz ve filigranın kenarlarından biraz taşarak boyayın, sonra yeniden Çalıştır'a basın. Karmaşık arka planlardaki büyük alanlarda yine iz kalabilir.
+**Kaldırmadan sonra soluk izler kalıyor** - daha eksiksiz ve filigranın kenarlarından biraz taşarak boyayın, sonra yeniden Çalıştır'a basın. Karmaşık arka planlardaki büyük alanlarda yine iz kalabilir.
 
-**Video çok yavaş** — normaldir: yapay zekâ her kareyi işler, bu yüzden video görsellerden çok daha uzun sürer. Bırakın çalışsın; kısa klipler ve daha fazla VRAM'li kart daha hızlı biter.
+**Video çok yavaş** - normaldir: yapay zekâ her kareyi işler, bu yüzden video görsellerden çok daha uzun sürer. Bırakın çalışsın; kısa klipler ve daha fazla VRAM'li kart daha hızlı biter.
 
-**Uygulama kendi kendine kapanıyor** — sorunu bildirirken `crash.log` dosyasını (yukarıdaki tabloya bakın) gönderin.
+**Uygulama kendi kendine kapanıyor** - sorunu bildirirken `crash.log` dosyasını (yukarıdaki tabloya bakın) gönderin.
 
 ---
 
